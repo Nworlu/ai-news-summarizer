@@ -42,7 +42,6 @@ const OnboardingScreen = ({}: OnboardingScreenProps) => {
     setCurrentIndex(Math.floor(position));
   };
   return (
-    // <ScreenView backgroundColor={"#fff"} style={{ flex: 1 }}>
     <View style={{ height: HEIGHT }} className="h-full">
       <FlatList
         ref={ref}
@@ -61,7 +60,6 @@ const OnboardingScreen = ({}: OnboardingScreenProps) => {
         onBackPress={onBackPress}
       />
     </View>
-    // </ScreenView>
   );
 };
 
