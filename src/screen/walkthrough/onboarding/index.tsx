@@ -14,7 +14,7 @@ import OnboardingItem from "@/components/onboard/OnboardingItem";
 import { HEIGHT, WIDTH } from "@/constants/size";
 import OnboardingFooter from "@/components/onboard/OnboardingFooter";
 
-const OnboardingScreen = ({}: OnboardingScreenProps) => {
+const OnboardingScreen = ({ navigation }: OnboardingScreenProps) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const ref = useRef<FlatList>(null);
   const onNextPress = useCallback(() => {
@@ -24,6 +24,8 @@ const OnboardingScreen = ({}: OnboardingScreenProps) => {
         animated: true,
       });
       setCurrentIndex(currentIndex + 1);
+    } else if (currentIndex === onboardingContent.length - 1) {
+      navigation.replace("auth-stack");
     }
   }, [currentIndex]);
   const onBackPress = useCallback(() => {

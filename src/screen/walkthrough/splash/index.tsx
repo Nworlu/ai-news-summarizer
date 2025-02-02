@@ -26,5 +26,7 @@ export default SplashScreen;
 const styles = StyleSheet.create({
   logo: {
     marginBottom: HEIGHT * 0.3,
+    width: 217,
+    height: 67,
   },
 });

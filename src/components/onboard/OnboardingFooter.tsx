@@ -24,7 +24,7 @@ const OnboardingFooter = (props: Props) => {
         ))}
       </View>
 
-      <View className="flex-row items-center gap-2.5">
+      <View className="flex-row items-center gap-2.5 max-w-36 w-full justify-end">
         {currentIndex > 0 && (
           <TouchableOpacity onPress={onBackPress}>
             <Text className="text-body-text text-base font-semibold leading-6">
@@ -33,6 +33,7 @@ const OnboardingFooter = (props: Props) => {
           </TouchableOpacity>
         )}
         <PrimaryButton
+          type="PRIMARY"
           onPress={onPress}
           text={
             currentIndex < onboardingContent.length - 1 ? "Next" : "Get Started"

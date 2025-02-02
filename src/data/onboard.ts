@@ -28,3 +28,5 @@ export const onboardingContent = [
     image: require("@/assets/image/onboard3.jpeg"),
   },
 ];
+
+export const tagProfile = ["Recently Viewed", "Summarized News"];

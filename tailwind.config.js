@@ -12,6 +12,7 @@ module.exports = {
         placeholder: "#A0A3BD",
         button: "#EEF1F4",
         primary: "#1877F2",
+        "error-dark": "#C30052",
       },
       height: {
         pich: "36.5rem",
